@@ -1,0 +1,60 @@
+/* Reset margins and paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Main layout styles */
+  .main {
+    position: relative; /* Ensure relative positioning for children */
+    overflow: hidden; /* Clear floats */
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    position: fixed; /* Fix sidebar */
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height sidebar */
+    width: 240px; /* Sidebar width */
+    background-color: #f8f8f8; /* Sidebar background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example shadow */
+  }
+  
+  /* Content styles */
+  .content {
+    margin-left: 260px; /* Add margin to the left to accommodate the sidebar */
+    padding-top: 60px; /* Reserve space for fixed header */
+    height: 100%; /* Full height content */
+    overflow-y: auto; /* Enable scrolling */
+  }
+  
+  /* Header styles */
+  .header {
+    position: fixed; /* Fix header */
+    top: 0;
+    width: 100%; /* Full width header */
+    height: 60px; /* Header height */
+    background-color: #009f6b; /* Header background color */
+    border-bottom: 1px solid #ddd; /* Header bottom border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example shadow */
+    z-index: 1000; /* Ensure header is above other content */
+  }
+  
+  /* Body styles */
+  .body {
+    padding: 20px; /* Body padding */
+    background-color: #fff; /* Body background color */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    height: calc(100vh - 60px); /* Calculate height to fill remaining viewport */
+  }
+  
+  /* Helper class for spacing */
+  .mx-5 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
